@@ -43,7 +43,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'test_django.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
 TEMPLATES = [
     {
@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'test_django.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
